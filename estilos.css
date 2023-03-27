@@ -7,3 +7,13 @@
     margin-left: 40px;
     margin-top: 30px;
 }
+
+.botoncamila{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
