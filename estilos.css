@@ -1,0 +1,9 @@
+.nombre{
+    color: blue;
+    font-size: 100px;
+    font-family: poppins;
+}
+.contenedor-nombres{
+    margin-left: 40px;
+    margin-top: 30px;
+}
