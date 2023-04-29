@@ -928,13 +928,13 @@
               <div class="lets-talk">
                 <h1>Contáctame</h1>
                 <label for="nombre">Nombre / Empresa</label>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" required>
                 <label for="email">Correo Electronico</label>
-                <input type="email" name="email" placeholder="Correo@dominio.com">
+                <input type="email" name="email" placeholder="Correo@dominio.com" required>
                 <label for="asunto">Asunto</label>
-                <input type="text" name="asunto">
+                <input type="text" name="asunto" required>
                 <label for="mensaje">Mensaje</label>
-                <textarea class="mensaje-correo" name="mensaje" id="" cols="30" rows="10" placeholder="Ingresa aquí tu mensaje..."></textarea>
+                <textarea class="mensaje-correo" name="mensaje" id="" cols="30" rows="10" placeholder="Ingresa aquí tu mensaje..." required></textarea>
                 
                 <input type="hidden" target="_blank" name="_next" value="envioCorrecto.html">
                 <input type="hidden" name="_captcha" value="false">
