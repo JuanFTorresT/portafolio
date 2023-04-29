@@ -1,25 +1,53 @@
 body{
     font-family: poppins;
 }
+
+strong{
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutMe{
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+}
+
+
+.columnaDerecha{
+display: inline-block;
+}
+
+.fotopipe{
+    max-width: 500px;
+    height: auto;
+}
+
 .nombre{
     color: #132142;
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: 700;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-
-}
-.aboutMe{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    margin-right: 0px;
-    margin-top: 60px;
+    margin: 0;
 }
 
-.columnaIzquierda{
-    width: 50%;
+.dedicacion{
+    color: #132142;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.descripcion{
+    color: #132142;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: justify; 
 }
 
 .downloadcv{
@@ -28,47 +56,39 @@ body{
     font-family: poppins;
     font-size: 1rem;
     /*arriba izquierda abajo derecha*/
-    padding: 8px 20px 8px 20px;
+    padding: 15px;
     border-radius: 30px;
     border-color: rgba(255, 255, 255, 0);
     font-weight: 700;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.13);
-    
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-}
-
-.dedicacion{
-    color: #132142;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
 
 }
 
-.descripcion{
-    color: #132142;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 10px;
-    
+.columnaIzquierda{
+    width: 80%;
+    display: inline-block;
 }
+
+
 
 .talk{
     color: #132142;
     font-size: 1.5rem;
     font-weight: 700;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
 }
 
-.fotopipe{
-    margin-top: -30px;
-    width: 650px;
+.icons{
+    margin: 0px;
 }
+
+.linkedin{
+    margin-left: 8px;
+}
+
+
 
 .experience{
     background-color: #132142;
@@ -92,19 +112,25 @@ body{
 
 h1{
     font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.slide-container{
+    width: 70%;
+}
+
+.contenedor-tarjetas{
+    display: block;
 }
 
 .tarjeta1{
 
     border-radius: 30px;
-    margin: 15px;
-    padding: 35px;
-    width: 550px;
+    margin: 15px auto;
+    padding: 80px;
+    width: 100%;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+
 }
 .tarjeta2{
 
@@ -144,23 +170,30 @@ p{
 .whats{
     margin-left: 8px;
 }
-.linkedin{
-    margin-left: 8px;
-}
+
 
 .fotoEmpresa{
-    width: 40px;
+    display: inline-block;
+    vertical-align: top;
 }
+
 .infoTarjeta{
-    margin-left: 30px;
-    width: 400px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-left: 20px;
+    width: 80%;
+    display: inline-block;
 }
 
 hr{
     width: 100%;
-    padding-bottom: 15px;
+    margin: 30px 0;
+}
+
+/*EMPIEZA CSS PROGRESS BAR */
+
+.circulosProgreso{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .skill{
@@ -168,6 +201,11 @@ hr{
     height: 160px;
     position: relative;
     margin: 50px;
+    display: inline-block;
+}
+
+.skill p{
+    margin-top: 15px;
 }
 
 .outer{
@@ -193,13 +231,35 @@ hr{
     border-radius: 50%;
 }
 
-#numberhtml{
+.imagenprogressbar{
+    width: 70px;
+}
+
+#numberjs{
     font-weight: 700;
     font-size: 2rem;
     color: #132142;
 }
 
-#numbercss{
+#numberwordpress{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #132142;
+}
+
+#numberfigma{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #132142;
+}
+
+#numberphotoshop{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #132142;
+}
+
+#numberillustrator{
     font-weight: 700;
     font-size: 2rem;
     color: #132142;
@@ -207,7 +267,7 @@ hr{
 
 .circlehtml{
     fill: none;
-    stroke: url(#GradientColor);
+    stroke: url(#GradientColorhtml);
     stroke-width: 20px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
@@ -216,23 +276,114 @@ hr{
 
 @keyframes animhtml{
     100%{
-        stroke-dashoffset: 157.5;
+        stroke-dashoffset: 0;
     }
 }
 
+
 .circlecss{
     fill: none;
-    stroke: url(#GradientColor);
+    stroke: url(#GradientColorcss);
     stroke-width: 20px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
     animation: animcss 2s linear forwards;
 }
 
+
 @keyframes animcss{
     100%{
-        stroke-dashoffset: 26;
+        stroke-dashoffset: 0;
     }
+}
+
+.circlejs{
+    fill: none;
+    stroke: url(#GradientColorjs);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animjs 2s linear forwards;
+}
+
+
+@keyframes animjs{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.circlewordpress{
+    fill: none;
+    stroke: url(#GradientColorwordpress);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animwordpress 2s linear forwards;
+}
+
+
+@keyframes animwordpress{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.circlefigma{
+    fill: none;
+    stroke: url(#GradientColorfigma);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animfigma 2s linear forwards;
+    
+}
+
+@keyframes animfigma{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.circlephotoshop{
+    fill: none;
+    stroke: url(#GradientColorphotoshop);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animphotoshop 2s linear forwards;
+}
+
+
+@keyframes animphotoshop{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.circleillustrator{
+    fill: none;
+    stroke: url(#GradientColorillustrator);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animillustrator 2s linear forwards;
+}
+
+
+@keyframes animillustrator{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/*TERMINA CSS PROGRESS BAR*/
+
+.cuadro{
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
 }
 
 svg{
@@ -259,16 +410,10 @@ svg{
 #titleskills{
     color: #132142;
     text-align: center;
-    padding-bottom: 50px;
     padding-top: 50px;
 }
 
-.circulosProgreso{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 300px 300px 300px 300px;
-    padding-bottom: 50px;
-}
+
 
 .titleportfolio{
     color: #132142;
@@ -277,54 +422,378 @@ svg{
     padding-top: 40px;
 }
 
+
+.proyectos{
+
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.textoproximamente{
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+.contenedor-imagen{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center ;
+    
+
+}
+
+.contenedor-imagen:hover .texto{
+    opacity: 1;
+    
+}
+
+
+.texto {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-in-out;
+    padding: 10px;
+
+}
+
+.texto:hover{
+    opacity: 1;
+}
+
+.contenedor {
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    margin: 1vw;
+}
+
+.contenedor img{
+    transition: opacity 1.5s ease-in-out;
+}
+
+
+
+
+
 .prueba{
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.384);
+    transition: opacity 1.5s ease-in-out;
+    
+}
+
+.contenedor img.top{
+    position: absolute;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.384);
+}
+
+.contenedor img.top:hover{
+    opacity: 0;
+}
+
+
+.proximamente{
     width: 550px;
+    border: none;
     background-color: black;
     border-radius: 30px;
     margin: 25px;
-    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.384);
-    
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.384);    
 }
 
-.proyectos{
-    display: grid;
-    grid-template-columns: 600px 600px;
-    
-    justify-content: center;
+
+
+
+
+
+.form-contact{
+    width: 70%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.circulosprogresocel{
-    display: none;
+.lets-talk{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.icons{
+.lets-talk h1{
+    color: #132142;
+    margin-bottom: 40px;
+}
+
+
+label{
+    display: block;
+    margin-left: 20px;
+    color: #132142;
+    font-weight: 600;
+}
+
+.info{
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+
+.info img{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input{
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
     margin-top: 10px;
+    border: none;
+    height: 50px;
+    background-color: #e8efff;
+    color: #132142;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .fotopipe{
-        width: 300px;
-        margin: 20px;
+input:focus{
+    outline: none;
+}
+
+.enviar-formulario{
+    background-color: #F38F1A;
+    color: white;
+    width: 50%;
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.15);
+}
+
+.mensaje-correo{
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    resize: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: none;
+
+    background-color: #e8efff;
+    color: #132142;
+    padding: 20px;
+    
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.redes{
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.15);
+    border-radius: 30px;
+}
+
+.info h1{
+    color: #132142;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.redes img{
+    max-width: 50px;
+    height: auto;
+    margin: 0 15px;
+}
+
+
+
+#contenido{
+    width: 100%;
+}
+
+.animado{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.animado2{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    background: #132142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer h2{
+    color: #132142;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+footer p{
+    margin: 20px;
+    color: #132142;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#copy{
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    .aboutMe{
+        width: 90%;
+        display: block;
     }
 
-    .circulosProgreso {
-        display: none;
+    .columnaDerecha{
+        width: 100%;
+        text-align: center;
+    }
+
+    .columnaIzquierda{
+        text-align: center;
+        width: 100%;
+    }
+
+    .dedicacion{
+        margin: 20px auto;
+    }
+
+    .downloadcv{
+        width: 80%;
+        height: 50px;
+    }
+
+    .talk{
+        display: block;
+        margin: 40px 0 0 0;
+    }
+
+    .linkedin{
+        margin: 5px 0;
+    }
+
+    .whats{
+        margin: 5px 0;
     }
 
     .proyectos{
-        display: block;
+        width: 90%;
     }
 
-    .prueba{
-        width: 350px;
+    .slide-container {
+        width: 90%;
+    }
+    .form-contact{
+        width: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    main{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .skill{
+        align-self: center;
+        justify-self: center;
+    }
+
+
+
+    .slide-container{
+        width: 90%;
+    }
+
+
+    .fotopipe{
+        width: 100%;
+    }
+
+
+
+
+    .proyectos{
         display: block;
-        margin: auto;
-        margin-bottom: 30px;
+        width: 90%;
+        
+    }
+
+    .contenedor {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+
+
+    .prueba{
+        width: 100%;
+        display: block;
+
     }
 
     .aboutMe{
-        margin: 0px;
-        padding: 0px;
+        margin: 0px auto;
+        width: 90%;
+        display: block;
     }
 
     .columnaIzquierda{
@@ -336,14 +805,29 @@ svg{
         margin: auto;
     }
 
-    .tarjeta2{
-        width: 350px;
-        height: auto;
+    .experience{
+        padding: 0;
+    }
+
+    .titleExperience {
+        padding: 10px 0;
+
+    }
+
+
+    .contenedor-tarjetas{
+        display: block;
+        width: 90%;
+        text-align: center;
     }
 
     .tarjeta1{
-        width: 350px;
+        width: 100%;
         height: auto;
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px;
+
     }
 
     img{
@@ -352,18 +836,13 @@ svg{
     }
 
     .infoTarjeta{
-        margin-left: 0px;
+        margin: 0 auto;
         text-align: center;
     }
 
     .fotoEmpresa{
         display: block;
-        margin-left: 117px;
-        margin-bottom: 20px;
-    }
-
-    .descripcion{
-        /*display: none;*/
+        margin: 15px auto;
     }
 
     .nombre{
@@ -371,30 +850,27 @@ svg{
         text-align: center;
     }
 
-
-
     .dedicacion {
         display: block;
         text-align: center;
-        width: 300px;
         font-size: 1rem;
         display: flex;
         margin: auto;
+    
     }
 
     .downloadcv{
         display: block;
         margin: auto;
-        padding: 8px 80px 8px 80px;
+        padding: 15px;
         margin-top: 8px;
-
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .talk {
-        color: #132142;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-top: 20px;
+        display: block;
+        margin: 40px 0 0 0;
     }
 
     .contacto{
@@ -417,76 +893,55 @@ svg{
         margin: 10px;
     }
 
-
-
-
-
-    .outercel {
-        height: 80px;
-        width: 80px;
-        padding: 10px;
-        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
-        border-radius: 50%;
+    #titleskills{
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .innercel {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 60px;
-        width: 60px;
-        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0,0 , 0.05);
-        border-radius: 50%;
+    .titleportfolio{
+        padding: 0;
+        margin: 0 0 30px 0;
     }
 
-    .circlehtmlcel {
-        fill: none;
-        stroke: url(#GradientColorcel);
-        stroke-width: 10px;
-        stroke-dasharray: 450;
-        stroke-dashoffset: 450;
-        animation: animhtmlcel 2s linear forwards;
+    .form-contact{
+        width: 90%;
+        display: block;
+        padding: 30px;
     }
 
-    @keyframes animhtmlcel{
-        100%{
-            stroke-dashoffset: 380;
-        }
+    .lets-talk{
+        width: 100%;
+    }
+    .lets-talk h1{
+        text-align: center;
     }
 
-
-    .skillcel {
-        width: 80px;
-        height: 80px;
-        position: relative;
-        margin: 24px;
-
+    .enviar-formulario{
+        width: 100%;
     }
 
-    .skill{
+    .info{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .info #getintouch{
         display: none;
     }
 
-    .circulosprogresocel {
-        max-width: 100%;
-
-        display: grid;
-        /* flex-wrap: wrap; */
-        flex-direction: row;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
-        margin: 0px 50px 50px 50px;
+    .redes{
+        display: block;
+    }
+    .redes img{
+        display: inline-block;
     }
 
-    #numberhtmlcel{
-        font-size: 1rem;
-        font-weight: 700;
-    }
-
-    .pcel{
+    .redes h1{
         text-align: center;
-        
     }
 
 }
+
+
 

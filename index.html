@@ -1,695 +1,983 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- barra animada-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha512-0RYHqoOARmpxNEw+esxNHXaPoXWU36swC8a5BgmnexZNmOhDewCvKRNWitJiwf40o8JUsg831Uu/cRIN7sCdKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="js/wavify.js"></script>
+    <script src="js/jquery.wavify.js"></script>
+
+
+    <!--------------------->
+
+    <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+    <!--------------------->
+
+    <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/estilos.css" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <script defer src="js/app.js"></script>
     <title>Juan Torres</title>
   </head>
   <body>
     <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navegacion">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Juan Torres</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" id="navegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Juan Torres</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#experience"
-                >Experience</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#iraskills">Skills & Languages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#iraeducation">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#iraportfolio">Portfolio</a>
-            </li>
-          </ul>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#iraskills">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#iraeducation">Educación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#iraportfolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- SECCION ABOUT ME -->
+    <main>
+      <div class="aboutMe">
+        <!-- COLUMNA IZQUIERA -->
 
-    <div class="aboutMe">
-      <!-- COLUMNA IZQUIERA -->
+        <div class="columnaDerecha">
+          <img class="fotopipe" src="imagenes/felipe.png" alt="Juan Torres" />
 
-      <div class="columnaDerecha">
-        <img class="fotopipe" src="imagenes/felipe.png" alt="Juan Torres" />
+
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+
+        <div class="columnaIzquierda">
+          <h5 class="nombre">Juan Felipe Torres T.</h5>
+          <p class="dedicacion">Ingeniero de Software / Desarrollador Front - End</p>
+          
+          
+          <p class="descripcion">
+            ¡Hola! Me llamo Juan Felipe Torres Trujillo y soy estudiante de <strong>Ingeniería de Software en la Universidad Surcolombiana</strong>. Me apasiona el desarrollo de aplicaciones web y, para mejorar mis habilidades en el área de <strong>Front End</strong>, he estado participando en el programa académico <strong>Oracle Next Education</strong>.<br><br>
+
+            Tengo la habilidad de <strong>crear aplicaciones web interactivas, atractivas y responsivas</strong> utilizando tecnologías como <strong>HTML</strong>, <strong>CSS</strong> y <strong>Javascript</strong>. También tengo experiencia en el diseño de interfaces de usuario, utilizando herramientas como <strong>Photoshop</strong>, <strong>Illustrator</strong> y <strong>Figma</strong>.<br><br>
+
+            <strong>Me gusta aprender</strong> y estar actualizado sobre las últimas tendencias en el mundo del desarrollo de software. <strong>Estoy entusiasmado por trabajar en nuevos proyectos y seguir mejorando mis habilidades para brindar soluciones de calidad a los usuarios</strong>.
+          </p>
+
+          <a href="/imagenes/HV Felipe Torres.pdf" download="HV Felipe Torres"><button type="button" class="downloadcv">Descargar HV</button></a>
+          
+          
+        </div>
+
+
       </div>
 
-      <!-- COLUMNA DERECHA -->
 
-      <div class="columnaIzquierda">
-        <h5 class="nombre">Juan Felipe Torres T.</h5>
-        <p class="dedicacion">Software Engeeniering / Front-End Developer</p>
-        <p class="descripcion">
-          Hola, soy Juan Felipe Torres Trujillo y soy estudiante de <b>Ingeniería
-            de Software</b> en la universidad surcolombiana, tambien estoy en el
-          programa de <b>Oracle Next Education</b> adquiriendo y mejorando
-          conocimientos en el area de desarrollo <b>Front End</b>. Tengo las
-          <b>habilidades necesarias para crear aplicaciones web interactivas que
-            sean atractivas y responsivas.</b> he usado tecnologias como <b>HTML</b>, <b>CSS</b>,
-          <b>Javascript</b> y el framework <b>React</b>. adicionalmente soy autodidacta en herramientas de diseño como <b>Photoshop</b> y <b>Figma</b>. adicionalmente
-        </p>
-        <button type="button" class="downloadcv">Download CV</button>
 
-        <div class="contacto">
-          <h5 class="talk">
-            Let's Talk
 
-            <div class="icons">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/juan-felipe-torres-trujillo-993856181/"
-              >
-                <img
-                  class="linkedin"
-                  src="imagenes/linkedin.png"
-                  alt="LinkedIn"
-                  width="40px"
-                />
-              </a>
 
-              <a href="">
-                <img
-                  class="whats"
-                  src="imagenes/mail.png"
-                  alt="WhatsApp"
-                  width="40px"
-                />
-              </a>
+
+      <!-- SECCION EXPERIENCE -->
+        <!--div animado v1-->
+
+      <div class="experience" id="experience">
+
+        <div class="animado">
+          <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        </div><!--div animado-->
+
+
+        <div class="titleExperience">
+          <h1>Experiencia</h1>
+        </div><!--titleExperience-->
+
+        <!-- TARJETAS EXPERIENCE -->
+        <div class="slide-container swiper">
+          <div class="slide-content">
+
+              <div class="contenedor-tarjetas swiper-wrapper">
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/cuadrosymas.png"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Cuadros y Más</p>
+                    <p class="months">3 years</p>
+                    <br />
+                    <p class="subtitleExperience">Web Development</p>
+                    <p>
+                      jornada completa<br />
+                      may. 2020 - actualidad
+                    </p>
+                    <br />
+                    <p>
+                      <b>Aptitudes:</b> Wordpress · CSS · Photoshop · HTML ·
+                      Edición de imagenes
+                    </p>
+                  </div><!--InfoTarjeta-->
+                  
+
+                </div><!--tarjeta1 swiper slide-->
+              </div><!--contenedor tarjetas-->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </div><!--slide-content-->
+          
+        </div><!--slide-container-->
+        
+        
+      </div><!--experience-->
+
+      <!-- SECCION SKILLS & LANGUAGES -->
+      
+      <div class="titleskills" id="iraskills">
+
+      <!--div animado 2-->
+      <div class="animado2">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID2" d=""/></svg>
+      </div><!--div animado 2-->
+        
+        <h1 id="titleskills">Habilidades</h1>
+      </div>
+
+      <!-- CIRCULAR PROGRESS BARS -->
+      
+      <div class="circulosProgreso">
+
+        <!-- PROGRESS BAR HTML -->
+
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/html.png" alt="">
             </div>
-          </h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECCION EXPERIENCE -->
-
-    <div class="experience" id="experience">
-      <div class="titleExperience">
-        <h1>Experience</h1>
-      </div>
-
-      <!-- TARJETAS EXPERIENCE -->
-
-      <div class="tarjeta1">
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/cuadrosymas.png"
-            alt="Cuadros y más logo"
-            width="50px"
-          />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Cuadros y Más</p>
-          <p class="months">3 years</p>
-          <br />
-          <p class="subtitleExperience">Web Development</p>
-          <p>
-            jornada completa<br />
-            may. 2020 - actualidad
-          </p>
-          <br />
-          <p>
-            <b>Aptitudes:</b> Wordpress · CSS · Photoshop · HTML ·
-            Graphic Design
-          </p>
-        </div>
-
-        <hr />
-
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/facebook logo.png"
-            alt="Facebook logo"
-            width="50px"
-          />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Sparta Cuadros</p>
-          <p class="months">7 months</p>
-          <p class="subtitleExperience">Web Development</p>
-          <p>
-            jornada completa<br/>
-            ene. 2020 - actualidad
-          </p>
-          <p>
-            <b>Aptitudes:</b> Wordpress · Shopify · CSS · Photoshop · HTML ·
-            Graphic Design
-          </p>
-        </div>
-      </div>
-
-      <div class="tarjeta1">
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/facebook logo.png"
-            alt="Facebook logo"
-            width="50px"
-          />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Bodega del Descuento (inactivo)</p>
-          <p class="months">7 months</p>
-          <p class="subtitleExperience">Web Development</p>
-          <p>
-            jornada completa<br />
-            sep. 2022 - mar. 2023
-          </p>
-          <p class="apt">
-            <b>Aptitudes:</b> Wordpress · Shopify · CSS · Photoshop · HTML ·
-            Graphic Design · Graphic Design
-          </p>
-        </div>
-
-        <hr />
-
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/online art tech.png"
-            alt="Cuadros y más logo"
-            width="50px"
-          />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Online Art Tech (inactivo)</p>
-          <p class="months">6 months</p>
-          <br>
-          <p class="subtitleExperience">Web Development</p>
-          <p>
-            jornada completa<br />
-            junio. 2020 - feb. 2021
-          </p>
-          <br>
-          <p>
-            <b>Aptitudes: </b>Shopify · CSS · Photoshop · HTML ·
-            Graphic Design
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECCION SKILLS & LANGUAGES -->
-
-    <div class="titleskills" id="iraskills">
-      <h1 id="titleskills">Skills & Languages</h1>
-    </div>
-
-    <!-- CIRCULAR PROGRESS BARS -->
-
-    <div class="circulosProgreso">
-      <!-- PROGRESS BAR HTML -->
-
-      <div class="skill">
-        <div class="outer">
-          <div class="inner">
-            <div id="numberhtml"></div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorhtml">
+                <stop offset="0%" stop-color="#FF7400" />
+                <stop offset="100%" stop-color="#FF3A00" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circlehtml"
+              
+              cx="80"
+              cy="80"
+              r="70"
+              stroke-linecap="round"
+            />
+          </svg>
+          <p>HTML</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#6CFF00" />
-              <stop offset="100%" stop-color="#4AAF00" />
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtml"
-            cx="40"
-            cy="40"
-            r="70"
-            stroke-linecap="round"
-          />
-        </svg>
-        <p>HTML</p>
-      </div>
+        <!-- PROGRESS BAR CSS -->
 
-      <!-- PROGRESS BAR CSS -->
-
-      <div class="skill">
-        <div class="outer">
-          <div class="inner">
-            <div id="numbercss"></div>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/css.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorcss">
+                <stop offset="0%" stop-color="#2965f1" />
+                <stop offset="100%" stop-color="#2965f1" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circlecss"
+              cx="80"
+              cy="80"
+              r="70"
+              stroke-linecap="round"
+            />
+          </svg>
+          <p>CSS</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#6CFF00" />
-              <stop offset="100%" stop-color="#4AAF00" />
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlecss"
-            cx="80"
-            cy="80"
-            r="70"
-            stroke-linecap="round"
-          />
-        </svg>
-        <p>CSS</p>
-      </div>
+        <!-- PROGRESS BAR JAVASCRIPT -->
 
-      <!-- PROGRESS BAR FIGMA -->
-
-      <div class="skill">
-        <div class="outer">
-          <div class="inner">
-            <div id="number"></div>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/js.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorjs">
+                <stop offset="0%" stop-color="#FFDD00" />
+                <stop offset="100%" stop-color="#f0db4f" />
+              </linearGradient>
+            </defs>
+            <circle class="circlejs" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          <p>JAVASCRIPT</p>
         </div>
+         <!-- CIERRA PROGRESS BAR JAVASCRIPT -->
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#6CFF00" />
-              <stop offset="100%" stop-color="#4AAF00" />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-        </svg>
-        <p>FIGMA</p>
-      </div>
+        <!-- INICIA PROGRESS BAR WORDPRESS -->
 
-      <!-- PROGRESS BAR PHOTOSHOP -->
-
-      <div class="skill">
-        <div class="outer">
-          <div class="inner">
-            <div id="number"></div>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/wordpress.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorwordpress">
+                <stop offset="0%" stop-color="#00a0d2" />
+                <stop offset="100%" stop-color="#0073aa" />
+              </linearGradient>
+            </defs>
+            <circle class="circlewordpress" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          <p>WORDPRESS</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#6CFF00" />
-              <stop offset="100%" stop-color="#4AAF00" />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-        </svg>
-        <p>PHOTOSHOP</p>
-      </div>
+        <!-- CIERRA PROGRESS BAR WORDPRESS -->
 
-      <!-- PROGRESS BAR PHOTOSHOP -->
+        <!-- INICIA PROGRESS BAR FIGMA -->
 
-      <div class="skill">
-        <div class="outer">
-          <div class="inner">
-            <div id="number"></div>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/figma.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorfigma">
+                <stop offset="20%" stop-color="#0ACF83" />
+                <stop offset="40%" stop-color="#1ABCFE" />
+                <stop offset="60%" stop-color="#A259FF" />
+                <stop offset="80%" stop-color="#FF7262" />
+                <stop offset="100%" stop-color="#F24E1E" />
+              </linearGradient>
+            </defs>
+            <circle class="circlefigma" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          <p>FIGMA</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#6CFF00" />
-              <stop offset="100%" stop-color="#4AAF00" />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-        </svg>
-        <p>PHOTOSHOP</p>
-      </div>
-    </div>
+        <!-- CIERRA PROGRESS BAR FIGMA -->
 
-    <!-- progres barr celular-->
+        <!-- INICIA PROGRESS BAR PHOTOSHOP -->
 
-    <div class="circulosprogresocel">
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/ps.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorphotoshop">
+                <stop offset="0%" stop-color="#40D0FB" />
+                <stop offset="100%" stop-color="#18152E" />
+              </linearGradient>
+            </defs>
+            <circle class="circlephotoshop" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          <p>PHOTOSHOP</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">HTML</p>
-      </div>
+        <!-- CIERRA PROGRESS BAR PHOTOSHOP -->
 
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+        <!-- INICIA PROGRESS BAR ILLUSTRATOR -->
+
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <img class="imagenprogressbar" src="/imagenes/ai.png" alt="">
+            </div>
           </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColorillustrator">
+                <stop offset="0%" stop-color="#f8a829" />
+                <stop offset="100%" stop-color="#3c240c" />
+              </linearGradient>
+            </defs>
+            <circle class="circleillustrator" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          <p>ILLUSTRATOR</p>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">CSS</p>
+        <!-- CIERRA PROGRESS BAR ILLUSTRATOR -->
+
+        
+      </div><!-- CIERRA CONTENEDOR CIRCULOS PROGRESO -->
+
+      
+
+      
+
+      
+
+      
+        
       </div>
 
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+      <!-- SECCION EDUCATION -->
+
+      <div class="experience" id="iraeducation">
+      <!--div animado-->
+      <div class="animado">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID3" d=""/></svg>
+      </div><!--div animado-->
+        <div class="titleExperience">
+          <h1 id="experience">Educación y Certificaciones</h1>
+        </div><!---titleExperience-->
+
+        <!-- TARJETAS EDUCATION -->
+        <div class="slide-container swiper">
+          <div class="slide-content">
+
+              <div class="contenedor-tarjetas swiper-wrapper">
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/usco.png"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Ingeniería en Desarrollo de Software</p>
+                    <p>Universidad Surcolombiana</p>
+                    <p class="months">
+                      2017 - actualidad
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Formación Principiante en Programación G5 - ONE</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 57526ed6-877d-4122-864a-55d36bb5c99c
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Formación Desarrollo Personal G5 - ONE</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 8379fb3d-d681-4459-9735-004971d9435a
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  
+
+                </div><!--tarjeta1-->
+
+                <!--Empieza tarjeta 2-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - HTML5 y CSS3 parte 4: Avanzando en CSS</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial eba32cc9-c6a6-400e-bb6a-db7486b40aa4
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - HTML5 y CSS3 parte 3: Trabajando con formularios y tablas</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 4af13004-2f42-463e-8dff-0fa76289324d
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - HTML5 y CSS3 parte 2: Posicionamiento, listas y navegación</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial fa75da95-1ecc-4bab-aab6-3b14a9829677
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta2-->
+
+                <!--Empieza tarjeta 3-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - HTML5 y CSS3 parte 1: Mi primera página web</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 5e8db78c-b7b4-43b6-9bcd-833e8a0997da
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Lógica de programación: Practicando con juegos y animaciones</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial b36bbdd2-52e8-408a-8a18-81e02eb7f852
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Lógica de programación: Conceptos primordiales</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 2d54e5c1-bdf6-4ac2-a88f-8904a9f8dd39
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta3-->
+
+                <!--Empieza tarjeta 4-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Lógica de programación: Primeros pasos</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 05c1d859-4ef8-48e8-8552-302d1f21416e
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Hábitos: Ser productivo para cumplir sus metas personales</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 7e3d87dc-0e9c-435e-af9b-41e818f78afc
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Foco: Enfocarse trae más resultados para el día a día</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 72f3ba89-4456-472f-8f2e-81271fa44be9
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta4-->
+
+                <!--Empieza tarjeta 5-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - LinkedIn: Como hacer que tu perfil trabaje por ti</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial f9c0a257-304d-40be-8bc2-2a17c9645e65
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Aprender a aprender: técnicas para tu autodesarrollo</p>
+                    <p>Alura Latam</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 0094173e-27dd-4137-9a6d-7023807d1710
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/sena.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">English does work - Level 1</p>
+                    <p>Servicio Nacional de Aprendizaje (SENA)</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 9537002727972CC1003811360C
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta5-->
+
+                <!--Empieza tarjeta 6-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/codigofacilito.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Curso Profesional de Git</p>
+                    <p>CódigoFacilito</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial 69638173-2b00-479f-a1d3-529ee098da30
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/platzi.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Introducción a Java SE</p>
+                    <p>Platzi</p>
+                    <p class="months">
+                      Expedición: ene. 2023
+                      <br>
+                      ID de la credencial d764d53-7fb2-4479-bd20-6e23f2c4fc25
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                  <hr />
+
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/scrum.jpg"
+                      alt="Facebook logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Scrum Fundamentals Certified</p>
+                    <p>SCRUMstudy - Accreditation Body for Scrum and Agile</p>
+                    <p class="months">
+                      Expedición: feb. 2021
+                      <br>
+                      ID de la credencial 830965
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta6-->
+
+                <!--Empieza tarjeta 6-->
+                <div class="tarjeta1 swiper-slide">
+                  <div class="fotoEmpresa">
+                    <img
+                      src="imagenes/alura.jpg"
+                      alt="Cuadros y más logo"
+                      width="50px"
+                    />
+                  </div><!--fotoEmpresa-->
+
+                  <div class="infoTarjeta">
+                    <p class="subtitleExperience">Oracle + Alura - Git y GitHub: controle y comparta su código</p>
+                    <p>CódigoFacilito</p>
+                    <p class="months">
+                      Expedición: abr. 2023
+                      <br>
+                      ID de la credencial c318ca37-a18c-4c70-a7ba-fb0244efa1c6
+                    </p>
+                  </div><!--InfoTarjeta-->
+
+                </div><!--tarjeta6-->
+
+              </div><!--contenedor tarjetas-->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </div><!--slide-content-->
+          
+        </div><!--slide-container-->
+        
+
+      </div><!--experience-->
+
+      <!-- SECCION PORTFOLIO-->
+
+      <div class="seccionPortfolio" id="iraportfolio">
+
+        
+        <div class="animado2"><!--div animado-->
+
+          <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID4" d=""/></svg>
+        
+        </div><!--div animado-->
+
+        <div class="titleportfolio">
+          <h1 id="titleportfolio">Portafolio</h1>
+        </div>
+
+        <div class="proyectos">
+
+          <div class="contenedor">
+            <a target="_blank" href="https://cuadrosymas.com/">
+              <img
+              class="top"
+              src="imagenes/cuadrosymas-proyecto.png"
+              alt="Cuadros y más"
+              />
+              <img
+              class="prueba"
+              src="imagenes/cuadrosymasproy.png"
+              alt="Cuadros y más"
+              />
+            </a>
           </div>
-        </div>
+          
+          
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">FIGMA</p>
-      </div>
+          
+          <div class="contenedor">
+            <a target="_blank" href="https://juanftorrest.github.io/Enigma-Encrypt/">
 
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+              <img
+              class="top"
+              src="imagenes/encriptador-proyecto.png"
+              alt="Cuadros y más"
+              />
+              
+              <img
+              class="prueba"
+              src="imagenes/enigma.jpg"
+              alt="Cuadros y más"
+              />
+              
+
+              
+              
+            </a>
           </div>
-        </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">PHOTOSHOP</p>
-      </div>
+          <div class="contenedor">
+              <p
+                class="texto"
+                src="imagenes/cuadrosymasproy.png"
+                alt="Cuadros y más">
+                EN PRODUCCIÓN
+              </p>
 
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+              <img
+              class="prueba"
+              src="imagenes/barbería.png"
+              alt="Cuadros y más"
+              />
+
+
           </div>
-        </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">JAVASCRIPT</p>
+
+          
+        </div>
       </div>
 
-      <div class="skillcel">
-        <div class="outercel">
-          <div class="innercel">
-            <div id="numberhtmlcel">65%</div>
+      <!-- FORMULARIO CONTACTO -->
+
+      <div class="experience" id="contacto">
+          <!--div animado-->
+          <div class="animado">
+            <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID5" d=""/></svg>
+          </div><!--div animado--><!--
+          <div class="titleExperience">
+            <h1>Contáctame</h1>
           </div>
-        </div>
+        -->
+          <form action="https://formsubmit.co/juanftorrest@gmail.com" method="POST">
+          <div class="form-contact">
+            <div class="titutlo-formulario"></div>
+              <div class="lets-talk">
+                <h1>Contáctame</h1>
+                <label for="nombre">Nombre / Empresa</label>
+                <input type="text" name="nombre">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" placeholder="Correo@dominio.com">
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="mensaje-correo" name="mensaje" id="" cols="30" rows="10" placeholder="Ingresa aquí tu mensaje..."></textarea>
+                
+                <input type="hidden" target="_blank" name="_next" value="envioCorrecto.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="¡NUEVO MENSAJE DEL PORTAFOLIO!">
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="80px"
-          height="80px"
-        >
-          <defs>
-            <linearGradient id="GradientColorcel">
-              <stop offset="0%" stop-color="#6CFF00"></stop>
-              <stop offset="100%" stop-color="#4AAF00"></stop>
-            </linearGradient>
-          </defs>
-          <circle
-            class="circlehtmlcel"
-            cx="40"
-            cy="40"
-            r="35"
-            stroke-linecap="round"
-          ></circle>
-        </svg>
-        <p class="pcel">HTML</p>
-      </div>
-    </div>
+                <button class="enviar-formulario" type="submit">Enviar</button>
 
-    <!-- SECCION EDUCATION -->
+              </div>
+              <div class="info">
+                <img id="getintouch" src="imagenes/Get in touch-cuate.png" alt="">
+                <h1>Redes Sociales</h1>
+                <div class="redes">
+                  <a href="https://www.linkedin.com/in/juan-felipe-torres-t/"><img src="/imagenes/linkedin.png" alt=""></a>
+                  <a href="https://github.com/JuanFTorresT"><img src="/imagenes/github.png" alt=""></a>
+                </div>
+              </div>
+          </div>
+        </form>
 
-    <div class="experience" id="iraeducation">
-      <div class="titleExperience">
-        <h1 id="experience">Education</h1>
-      </div>
+          
 
-      <!-- TARJETAS EDUCATION -->
 
-      <div class="tarjeta2">
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/usco.png"
-            alt="Universidad Surcolombiana"
-            width="50px"
-          />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Ingeniería en Desarrollo de Software</p>
-          <p>Universidad Surcolombiana</p>
-          <p class="months">2017 - actualidad</p>
-        </div>
-
-        <hr />
-
-        <div class="fotoEmpresa">
-          <img src="imagenes/scrum.png" alt="Facebook logo" width="50px" />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Scrum Fundamentals Certified</p>
-          <p>SCRUMstudy - Accreditation Body for Scrum and agile</p>
-          <p class="months">
-            Expedition: feb. 2021<br />
-            ID de la credencial 830965
-          </p>
-        </div>
-
-        <hr />
-
-        <div class="fotoEmpresa">
-          <img src="imagenes/platzi.png" alt="Facebook logo" width="50px" />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Introducción a Java SE</p>
-          <p class="subtitleExperience">Platzi</p>
-          <p class="months">
-            Expedición: ene. 2023<br />
-            ID de la credencial d764d53- 7fb2-4479-bd20-6e23f2c4fc25
-          </p>
-        </div>
       </div>
 
-      <div class="tarjeta2">
-        <div class="fotoEmpresa">
-          <img
-            src="imagenes/sena.png"
-            alt="Universidad Surcolombiana"
-            width="50px"
-          />
-        </div>
+    </main>
 
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">
-            Tecnico en contabilizacion de operaciones comerciales y financieras
-          </p>
-          <p>Sena</p>
-          <p class="months">2 años</p>
-        </div>
+    <footer>
 
-        <hr />
 
-        <div class="fotoEmpresa">
-          <img src="imagenes/inem.jpg" alt="Facebook logo" width="50px" />
-        </div>
+      <div class="animado2"><!--div animado-->
 
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Bachillerato</p>
-          <p>Inem Julian Motta Salas de Neiva</p>
-          <p class="months">2012 - 2016</p>
-        </div>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID6" d=""/></svg>
+      
+      </div><!--div animado-->
 
-        <hr />
-
-        <div class="fotoEmpresa">
-          <img src="imagenes/inem.jpg" alt="Facebook logo" width="50px" />
-        </div>
-
-        <div class="infoTarjeta">
-          <p class="subtitleExperience">Primaria</p>
-          <p>Inem Julian Motta Salas de Neiva</p>
-          <p class="months">2005 - 2011</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECCION PORTFOLIO-->
-
-    <div class="seccionPortfolio" id="iraportfolio">
-      <div class="titleportfolio">
-        <h1 id="titleportfolio">Portfolio</h1>
-      </div>
-
-      <div class="proyectos">
-        <img
-          class="prueba"
-          src="imagenes/cuadrosymasproy.png"
-          alt="Cuadros y más"
-        />
-        <img
-          class="prueba"
-          src="imagenes/cuadrosymasproy.png"
-          alt="Cuadros y más"
-        />
-        <img
-          class="prueba"
-          src="imagenes/cuadrosymasproy.png"
-          alt="Cuadros y más"
-        />
-        <img
-          class="prueba"
-          src="imagenes/cuadrosymasproy.png"
-          alt="Cuadros y más"
-        />
-      </div>
-    </div>
+      <p>Hecho con amor ❤️</p>
+      
+      <p id="copy">Juan Felipe Torres | Copyright ©2023. Todos los derechos reservados.</p>
+    </footer>
   </body>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript">
+
+  </script>
 </html>

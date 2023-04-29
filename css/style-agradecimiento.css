@@ -1,0 +1,51 @@
+body{
+    font-family: poppins;
+    background-color: #132142;
+}
+
+.mensaje-enviado{
+    
+    
+    background-color: #FFFFFF;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    padding: 50px; 
+    
+
+}
+.mensaje-enviado h1{
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    color: #132142;
+    font-weight: 600;
+}
+
+.mensaje-enviado img{
+    max-width: 300px;
+    height: auto;
+}
+.mensaje-enviado p{
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    color: #132142;
+    margin-bottom: 30px;
+}
+
+.volver{
+    font-family: poppins;
+    padding: 15px;
+    background-color: #F38F1A;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
