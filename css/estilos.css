@@ -944,5 +944,20 @@ footer p{
 
 }
 
+.bi-whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    z-index: 10000;
+}
+
+.bi-whatsapp::before{
+    background-color: #12d73a;
+    padding: 10px;
+    border-radius: 100%;
+}
+
 
 
